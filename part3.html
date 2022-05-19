@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+    
+    h1 {
+        font-family: 'Macondo', cursive;
+        font-size: 50px;
+        
+    }
+    p {
+        font-family: 'Macondo', cursive;
+        font-size: 25px;
+        background-color:rgb(188, 199, 164);
+    }
+    li {
+        font-family: 'Macondo', cursive;
+        font-size: 25px;
+        background-color:rgb(188, 199, 164);
+        
+    }
+    </style>
+
+<body>
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <input type="submit" value="DarkMode" onclick="darkMode()" style="font-size: 20px;border:5px solid #587364;background-color:#3F5957;color:white;font-family: 'Macondo', cursive;">
+    <input type="submit" value="LightMode" onclick="lightMode()" style="font-size: 20px;border:5px solid #587364;background-color:#D9D7BA;color:white; font-family: 'Macondo', cursive;">
+
+<div class="header">
+  <h1>White Roses</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="part2.html">How to</a>
+  <a href="part3.html">Why</a>
+  <a href="part5.html">History</a>
+  <a href="part4.html">contact</a>
+</div>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+
+        <div class="grid">
+          <figure class="effect-layla">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-white-rose-blooming-outdoors-royalty-free-image-1595335217.jpg" alt="img06"/>
+            <figcaption>
+              <h2>Mir<span>acle</span></h2>
+              <p>This rose blooms for about only three weeks in the summer and then waits till next summer to bloom again</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-layla">
+            <img src="https://p1.pxfuel.com/preview/321/478/394/white-roses-purity-symbol-blooming-plant-romantic-nature.jpg" alt="img03"/>
+            <figcaption>
+              <h2>Gold <span>Strike</span></h2>
+              <p>When this rose appears, it blooms all summer along.</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <ul>
+            <li><p> I have always really liked roses because they are such a symbol for a lot of things.<br> I really like the color white and red and I think they are also a really pretty contrast.<br> My Grandma gardens a lot and I thought it would be a really fun way to bond with her and to have <br> a skill that I can say I was taught by my Grandma.<br></li>
+        </ul>
+        
+          <script>
+            function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+            </script>
+</body>
+
+</html>
+
+        
