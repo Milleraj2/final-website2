@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+    
+    h1 {
+        font-family: 'Macondo', cursive;
+        font-size: 50px;
+        
+    }
+    h3 {
+        font-family: 'Macondo', cursive;
+        
+    }
+    li {
+        font-family: 'Macondo', cursive;
+        font-size: 20px;
+        background-color:rgb(188, 199, 164);
+        
+    }
+    .Fun {
+        background-color:rgb(188, 199, 164);
+    }
+    a {
+       color: #3F5957;
+    }
+    </style>
+
+<body>
+
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <input type="submit" value="DarkMode" onclick="darkMode()" style="font-size: 20px;border:5px solid #587364;background-color:#3F5957;color:white;font-family: 'Macondo', cursive;">
+    <input type="submit" value="LightMode" onclick="lightMode()" style="font-size: 20px;border:5px solid #587364;background-color:#D9D7BA;color:white; font-family: 'Macondo', cursive;">
+    
+<div class="header">
+ <h1>White Roses</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="part2.html">How to</a>
+  <a href="part3.html">Why</a>
+  <a href="part5.html">History</a>
+  <a href="part4.html">contact</a>
+</div>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+
+<div class="content">
+        <div class="grid">
+          <figure class="effect-lily">
+            <img src="https://www.whiteflowerfarm.com/mas_assets/cache/image/6/4/e/1/25825.Jpg" alt="img12"/>
+            <figcaption>
+              <div>
+                <h2>Three Week Old<span>Rose</span></h2>
+                <p>Fully Bloomed</p>
+              </div>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-lily">
+            <img src="https://images.unsplash.com/photo-1570112008549-e4181988109f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="img1"/>
+            <figcaption>
+              <div>
+                <h2>One Week Old <span>Rose</span></h2>
+                <p>Half way bloomed, about two more weeks to fully bloomed</p>
+              </div>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+        </div>
+        </center>
+    <h1 class="Fun">
+        Fun Facts!
+    </h1>
+    <ul>
+        <li>Roses Are One of the Oldest Flowers. It's no wonder that roses have been referenced in literature and music for centuries. ...</li>
+    <li>You Can Eat Roses. ...</li>
+    <li>Their Fragrance is Used in Perfumes. ...</li>
+    <li>Each Rose Color Has a Different Meaning. ...</li>
+    <li>The Rose is the U.S. National Flower. ...</li>
+    <li>The Most Expensive Rose Sold for Millions of Dollars.</li>
+        
+        <script>
+            function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+    
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+            </script>
+        
+</body>
+
+</html>
+
+
