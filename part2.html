@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+    
+    h1 {
+        font-family: 'Macondo', cursive;
+        font-size: 50px;
+        
+    }
+     h2 {
+        font-family: 'Macondo', cursive;
+        font-size: 25px;
+    }
+    li{
+        font-family: 'Macondo', cursive;
+        font-size: 25px;
+        background-color:rgb(188, 199, 164);
+        
+    }
+    .rose {
+        background-color:rgb(188, 199, 164);
+        
+    }
+    </style>
+
+<body>
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <input type="submit" value="DarkMode" onclick="darkMode()" style="font-size: 20px;border:5px solid #587364;background-color:#3F5957;color:white;font-family: 'Macondo', cursive;">
+    <input type="submit" value="LightMode" onclick="lightMode()" style="font-size: 20px;border:5px solid #587364;background-color:#D9D7BA;color:white; font-family: 'Macondo', cursive;">
+
+
+<div class="header">
+  <h1>White Roses</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="part2.html">How to</a>
+  <a href="part3.html">Why</a>
+  <a href="part5.html">History</a>
+  <a href="part4.html">contact</a>
+</div>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+
+<h2 class="rose">Want to do it your self?</h2>
+        <div class="grid">
+          <figure class="effect-honey">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F34%2F2020%2F04%2F07%2Frose-opener-9bd8588e-0420.jpg" alt="img04"/>
+            <figcaption>
+              <h2>Dolo<span>res</span> <i>Rose</i></h2>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-honey">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2015%2F06%2F15213943%2F100847237.jpg" alt="img05"/>
+            <figcaption>
+              <h2>Vend<span>ela</span> <i>Rose</i></h2>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2 class="rose">Materials:</h2>
+            <ul>
+                <li>Bone meal or superphosphate.</li>
+                <li>Fresh rose plant.</li>
+                <li>Compost (if needed)</li>
+                <li>Mulch.</li>
+                <li>Granular rose fertilizer.</li>
+            </ul>
+                <br><br><br><br><br><br>
+          <script>
+            function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+            </script>
+</body>
+
+</html>
+
+        
