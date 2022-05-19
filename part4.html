@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+    body{
+        background:#58736496;
+    }
+    h1 {
+        font-family: 'Macondo', cursive;
+        font-size: 50px;
+        
+       
+    }
+    lable {
+        font-family: 'Macondo', cursive;
+        font-size: 15px;
+    }
+    @-webkit-keyframes {
+}
+@-webkit-keyframes extend {
+    0% {
+        width: 300px;
+        height: 200px;
+        border-radius: 100px;
+        } 10% {
+        width: 610px;
+        height: 210px;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 600px;
+        height: 200px;
+        background: #BF8665;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 190px;
+        background: #BF8665;
+        }
+    }
+@keyframes extend {
+    0% {
+        width: 600px;
+        height: 200px;
+        border-radius: 100px;
+        } 10% {
+        width: 610px;
+        height: 210px;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 600px;
+        height: 200px;
+        background: #D9D9D9;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin-left: 90px;
+        background: #401201;
+        }
+    }
+@-webkit-keyframes {
+}
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+@-webkit-keyframes {
+}
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+@keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+html {
+    background: #58736496;
+    }
+
+input, button, submit {
+    border: none
+    }
+
+.cont {
+    position: absolute;
+    width: 610px;
+    height: 10px;
+    left: 50%;
+    top: 50%;
+    margin: 400px 0 0 -800px
+    }
+
+button {
+    border-width: 1px;
+    width: 200px;
+    height: 100px;
+    /*border-radius*/
+    border-radius: 100px;
+    background: #260101;
+    position: absolute;
+    border: 5px solid #D9D9D9
+    }
+
+button > span {
+    font-size: 30px;
+    color: #ddd
+    }
+
+img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 100%;
+    margin: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0
+    }
+
+button:focus {
+    /*animation*/
+    -webkit-animation: extend 1s ease-in-out;
+    -ms-animation: extend 1s ease-in-out;
+    animation: extend 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+button:focus > span {
+    /*animation*/
+    -webkit-animation: disappear 1s ease-in-out;
+    -ms-animation: disappear 1s ease-in-out;
+    animation: disappear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+button:focus > img {
+    /*animation*/
+    -webkit-animation: appear 1s ease-in-out;
+    -ms-animation: appear 1s ease-in-out;
+    animation: appear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+    </style>
+
+<body>
+<h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <input type="submit" value="DarkMode" onclick="darkMode()" style="font-size: 20px;border:5px solid #587364;background-color:#3F5957;color:white;font-family: 'Macondo', cursive;">
+    <input type="submit" value="LightMode" onclick="lightMode()" style="font-size: 20px;border:5px solid #587364;background-color:#D9D7BA;color:white; font-family: 'Macondo', cursive;">
+
+<div class="header">
+<h1>White Roses</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="part2.html">How to</a>
+  <a href="part3.html">Why</a>
+  <a href="part5.html">History</a>
+  <a href="part4.html">contact</a>
+</div>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+    <h1>Have Any Questions?</h1>
+
+        <form action="https://api.sheetmonkey.io/form/mFW7PJqfpkB81EEdKaviDs" method="POST">
+            <lable>Your First Name</lable><br>
+            <input type="text" id="username" name="username" ><br>
+            <lable>Your Last Name</lable><br>
+            <input type="text" id="username" name="username"><br>
+            
+            <!-- radio buttons-->
+<br>
+            <input type="radio" id="ageRange" name="ageRange" value="13-18"> 
+            <label>13-18 years old</label>
+            <input type="radio" id="19-25" name="ageRange" value="19-25"> 
+            <label>19-25 years old</label> <br>
+            
+
+            <!--textarea-->
+            
+            <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                <textarea name="comments" id="comments" style="width:10%;height:80px;padding:2%;font-size:1.2em;border:12px ridge #733E1F;">
+                Enter your comments here...</textarea>
+                </form>
+
+            <!--CheckBoxes-->
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a Garden</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have grown Flowers before</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I dont have a Grandma</label><br><br>
+            
+            <!--Select-->
+
+            <select name="cars" id="cars">                <option value="volvo">if you have Flowers, What Kind do you have?</option>
+            <option value="SUV">Roses</option>
+            <option value="Turk">Dandelions</option>
+            <option value="Tessla">Tulips</option>
+            </select>
+            <br><br>
+
+            <!--Date-->
+
+            <label for="birthday">When were you born?</label>
+            <input type="date" id="birthday" name="birthday">
+    
+            <br><br>
+  <br><br>
+        </form>
+      </center>
+<div class="cont">  
+<button class="btn"><span>Submit</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+  
+    
+</div>
+        
+</body>
+
+</html>
+
+        
